@@ -1,0 +1,5 @@
+[user]
+	email = alwesam@gmail.com
+	name = alwesam
+[diff]
+  tool = gvim -d
