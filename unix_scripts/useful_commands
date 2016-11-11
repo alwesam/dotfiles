@@ -1,0 +1,2 @@
+#use sed for in place to find and replace
+sed -i -e 's/foo/bar/g' filename

@@ -21,6 +21,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'ton/vim-bufsurf'
+Plugin 'rust-lang/rust.vim'
 
 Bundle 'slim-template/vim-slim.git'
 
