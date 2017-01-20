@@ -55,3 +55,5 @@ inoremap jj <Esc>
 
 nnoremap <leader>sa :saveas %:p:h/
 colorscheme desert
+
+autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
