@@ -11,7 +11,7 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'mxw/vim-jsx'
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
+Plugin 'jiangmiao/auto-pairs'
 " My bundles
 Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
@@ -22,6 +22,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'ton/vim-bufsurf'
 Plugin 'rust-lang/rust.vim'
+
+Plugin 'sheerun/vim-polyglot'
 
 Bundle 'slim-template/vim-slim.git'
 
@@ -57,3 +59,5 @@ nnoremap <leader>sa :saveas %:p:h/
 colorscheme desert
 
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+
+let g:AutoPairsFlyMode = 1
