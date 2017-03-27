@@ -1,4 +1,5 @@
 alias open='xdg-open'
+alias vnc='xtightvncviewer'
 #git stuff
 alias gs='git status '
 alias ga='git add '
