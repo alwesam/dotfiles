@@ -1,5 +1,11 @@
 [user]
 	email = alwesam@gmail.com
 	name = alwesam
+[alias]
+  authors = log --pretty=format:"%C(yellow)%aN\\ %C(magenta)<%C(blue)%ae%C(magenta)>"
+  prev = checkout @~1
+  next = "!sh -c 'git --no-pager log --reverse --pretty=%H master | awk \"/$(git rev-parse @)/{getline;print}\" | xargs git checkout'"
+  first-sha = "!git --no-pager log --pretty=%H master | tail -n 1"
+  first = "!git checkout `git first-sha`"
 [diff]
   tool = gvim -d

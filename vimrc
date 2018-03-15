@@ -16,8 +16,10 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
+
+Plugin 'reedes/vim-lexical'
 
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'ton/vim-bufsurf'
@@ -61,3 +63,11 @@ colorscheme desert
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 
 let g:AutoPairsFlyMode = 1
+
+" for lexical
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd call lexical#init()
+  autocmd FileType textile call lexical#init()
+  autocmd FileType text call lexical#init({ 'spell': 0 })
+augroup END
