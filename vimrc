@@ -48,6 +48,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" reload automatically when changed in disk
+set autoread
+set shortmess=at
+
 "html close tag
 ":au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 

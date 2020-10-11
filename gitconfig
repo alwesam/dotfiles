@@ -6,6 +6,8 @@
   prev = checkout @~1
   next = "!sh -c 'git --no-pager log --reverse --pretty=%H master | awk \"/$(git rev-parse @)/{getline;print}\" | xargs git checkout'"
   first-sha = "!git --no-pager log --pretty=%H master | tail -n 1"
+  last-sha  = "!git --no-pager log --pretty=%H master | head -1"
   first = "!git checkout `git first-sha`"
+  last  = "!git checkout `git last-sha`"
 [diff]
   tool = gvim -d
